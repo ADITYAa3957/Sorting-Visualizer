@@ -483,3 +483,7 @@ via await keyword
 either to change bar size -> cumbersome
 I changed the space for the bars to take while the space of each bar and between was same
 */
+
+/*maniplulating speed
+Whereever timeout time is multiplied by 1/speed factor so speed increases pause/timeout
+decreases hence the speed increases of the algo*/
