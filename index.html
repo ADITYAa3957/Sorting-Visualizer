@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="controls">
+      <img src="images/sort.png" alt="" />
+      <h1 class="heading">Sorting Visualizer</h1>
+      <div class="sliders">
+        <div class="slider-box">
+          <h2 class="slider-name">Size of Array</h2>
+          <input
+            type="range"
+            min="50"
+            max="98"
+            value="50"
+            class="size-slider"
+            step="1"
+          />
+          <!-- width from 50 to 98vw  -->
+        </div>
+        <div class="slider-box">
+          <h2 class="slider-name">Speed</h2>
+          <input
+            type="range"
+            min="1"
+            max="12"
+            value="1"
+            class="speed-slider size-slider"
+            step="0.5"
+          />
+          <!-- speed from 1 to 10 -->
+        </div>
+      </div>
+
+      <div class="buttons-container">
+        <button class="sort-algo" id="array-generator">Generate Array</button>
+        <button class="sort-algo" id="selection-sort">Selection Sort</button>
+        <button class="sort-algo" id="bubble-sort">Bubble Sort</button>
+        <button class="sort-algo" id="insertion-sort">Insertion Sort</button>
+        <button class="sort-algo" id="heap-sort">Heap Sort</button>
+        <button class="sort-algo" id="merge-sort">Merge Sort</button>
+        <button class="sort-algo" id="quick-sort">Quick Sort</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="array"></div>
+    </div>
+    <footer class="footer">By Aditya Agarwal 2022</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
